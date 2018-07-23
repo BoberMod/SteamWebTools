@@ -628,10 +628,6 @@
 										icon: "http://plati.com/favicon.ico",
 										text: v("searchin") + " Plati.com"
 									}, {
-										href: "https://steampub.ru/search/" + p,
-										icon: "https://steampub.ru/favicon.ico",
-										text: v("searchin") + " SteamPub.ru"
-									}, {
 										href: "http://www.steamgifts.com/giveaways/search?q=" + p,
 										icon: "http://www.steamgifts.com/favicon.ico",
 										text: v("searchin") + " SteamGifts.com"
@@ -809,13 +805,6 @@
 									href: "https://steam.tools/itemvalue/#/" + u + "-730",
 									icon: "https://steam.tools/favicon.ico",
 									text: v("inventory") + " Steam.tools/itemvalue/"
-								}, {
-									hr: !0
-								}, {
-									id: "inv_spub",
-									href: "https://steampub.ru/user/" + u,
-									icon: "https://steampub.ru/favicon.ico",
-									text: v("profile") + " SteamPub.ru"
 								}, {
 									hr: !0
 								}

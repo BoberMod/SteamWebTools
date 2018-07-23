@@ -152,13 +152,6 @@ function profilePageInit(){
 			icon: 'https://steam.tools/favicon.ico',
 			text: t('inventory')+' Steam.tools/itemvalue/',
 		},
-		{hr:true},
-		{
-			id:   'inv_spub',
-			href: 'https://steampub.ru/user/'+steamid,
-			icon: 'https://steampub.ru/favicon.ico',
-			text: t('profile')+' SteamPub.ru',
-		},
 		{hr:true}
 
 	];

@@ -15,7 +15,7 @@
 // @connect		store.steampowered.com
 // @domain		store.steampowered.com
 // @version		0.8.13
-// @date		2018-04-19
+// @date		2018-07-23
 // @updateURL	https://raw.githubusercontent.com/BoberMod/SteamWebTools/master/release/version.tm.js
 // @grant		GM_xmlhttpRequest
 // @grant		GM_xhr

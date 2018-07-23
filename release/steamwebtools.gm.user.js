@@ -12,7 +12,7 @@
 // @include		https://steamcommunity.com/*
 // @connect		checkrep.ru
 // @connect		store.steampowered.com
-// @version		0.8.11
+// @version		0.8.12
 // @date		2018-03-08
 // @updateURL	https://raw.githubusercontent.com/BoberMod/SteamWebTools/master/release/version.gm.js
 // ==/UserScript==

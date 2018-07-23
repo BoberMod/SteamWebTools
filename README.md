@@ -1,6 +1,6 @@
 ## Install
-- [For Tampermonkey](https://raw.githubusercontent.com/Mr-VIT/SteamWebTools/master/release/steamwebtools.tm.user.js)
-- [For Greasemonkey](https://raw.githubusercontent.com/Mr-VIT/SteamWebTools/master/release/steamwebtools.gm.user.js)
+- [For Tampermonkey](https://raw.githubusercontent.com/BoberMod/SteamWebTools/master/release/steamwebtools.tm.user.js)
+- [For Greasemonkey](https://raw.githubusercontent.com/BoberMod/SteamWebTools/master/release/steamwebtools.gm.user.js)
 
 ## Current support is being provided for:  
 [![Tampermonkey 4.0+](https://img.shields.io/badge/Tampermonkey-4.0%2B-green.svg)](https://tampermonkey.net/)

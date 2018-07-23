@@ -812,10 +812,6 @@
 								}, {
 									hr: !0
 								}, {
-									href: "https://steammoney.com/trade/user/" + u,
-									icon: "https://steammoney.com/favicon.ico",
-									text: v("profile") + " SteamMoney.com"
-								}, {
 									id: "inv_spub",
 									href: "https://steampub.ru/user/" + u,
 									icon: "https://steampub.ru/favicon.ico",

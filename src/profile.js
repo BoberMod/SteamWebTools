@@ -154,11 +154,6 @@ function profilePageInit(){
 		},
 		{hr:true},
 		{
-			href: 'https://steammoney.com/trade/user/'+steamid,
-			icon: 'https://steammoney.com/favicon.ico',
-			text: t('profile')+' SteamMoney.com',
-		},
-		{
 			id:   'inv_spub',
 			href: 'https://steampub.ru/user/'+steamid,
 			icon: 'https://steampub.ru/favicon.ico',

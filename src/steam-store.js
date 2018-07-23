@@ -56,7 +56,7 @@ function init() {
 				subid = el.value;
 				el = el.parentElement.parentElement
 				if(settings.cur.storeShowSubid) {
-					el.insertAdjacentHTML('beforeEnd', '<div>Subscription id = <a href="http://steamdb.info/sub/'+subid+'">'+subid+'</a></div>');
+					el.insertAdjacentHTML('beforeEnd', '<div>Subscription id = <a href="https://steamdb.info/sub/'+subid+'">'+subid+'</a></div>');
 				}
 				if(settings.cur.storeShowBtnGetPrices) {
 					tmp = $('<div><a onclick="getPrices(event, \''+itemType+'\', '+itemId+');return false" href="#getPrices">'+t('getPrices')+'</a></div>');
@@ -71,7 +71,7 @@ function init() {
 						? 'app'
 						: 'package'
 					);
-					var reqUrl = 'http://store.steampowered.com/api/'+type+'details/?filters=price_overview,packages&v=1&'+type+'ids=';
+					var reqUrl = 'https://store.steampowered.com/api/'+type+'details/?filters=price_overview,packages&v=1&'+type+'ids=';
 
 
 					reqUrl += itemId+'&cc='+cc;
@@ -89,14 +89,14 @@ function init() {
 							s += '<b>'+(price.final/100)+'</b> '+price.currency;
 
 							if(data.packages)
-								s += ' (subID:<a href="http://steamdb.info/sub/'+data.packages[0]+'">'+data.packages[0]+'</a>)';
+								s += ' (subID:<a href="https://steamdb.info/sub/'+data.packages[0]+'">'+data.packages[0]+'</a>)';
 							// for non-main subs
 							try{
 								var pg = data.package_groups[0].subs;
 								if(pg.length>1){
 									for(var i=1;i<pg.length;i++){
 										var tmp = pg[i].option_text.match(/- \D*(\d+(?:[.,]\d{2})?)/i);
-										document.querySelector('.swt_price_'+i+'_'+cc+'>span').innerHTML = '<b>'+tmp[tmp.length-1]+'</b> '+price.currency+' (subID:<a href="http://steamdb.info/sub/'+pg[i].packageid+'">'+pg[i].packageid+'</a>)';
+										document.querySelector('.swt_price_'+i+'_'+cc+'>span').innerHTML = '<b>'+tmp[tmp.length-1]+'</b> '+price.currency+' (subID:<a href="https://steamdb.info/sub/'+pg[i].packageid+'">'+pg[i].packageid+'</a>)';
 									}
 								}
 							}catch(e){};
@@ -159,13 +159,13 @@ function init() {
 		var el = document.querySelector('.rightcol.game_meta_data');
 
 		links = [
-			{href:'http://steamdb.info/'+itemType+'/'+itemId+'/', icon:'https://steamdb.info/static/logos/favicon-16x16.png', text: t('viewin')+' SteamDB.info'},
+			{href:'https://steamdb.info/'+itemType+'/'+itemId+'/', icon:'https://steamdb.info/static/logos/favicon-16x16.png', text: t('viewin')+' SteamDB.info'},
 			{href:'http://www.steamprices.com/'+_cc.curCC.toLowerCase()+'/'+itemType+'/'+itemId, icon:'https://www.steamprices.com/assets/images/favicons/favicon-16x16.png', text: t('viewin')+' SteamPrices.com'},
 			{href:'http://plati.com/asp/find.asp?ai=111350&searchstr='+gamename, icon:'https://plati.com/favicon.ico', text: t('searchin')+' Plati.com'},
-			{href:'http://steampub.ru/search/'+gamename, icon:'http://steampub.ru/favicon.ico', text: t('searchin')+' SteamPub.ru'},
+			{href:'https://steampub.ru/search/'+gamename, icon:'https://steampub.ru/favicon.ico', text: t('searchin')+' SteamPub.ru'},
 			{href:'http://www.steamgifts.com/giveaways/search?q='+gamename, icon:'https://cdn.steamgifts.com/img/favicon.ico', text: t('searchin')+' SteamGifts.com'},
 			{href:'https://steambroker.com/tradeoffers.php?appid=753&refid=42362508&query='+gamename, icon:'https://steambroker.com/favicon.ico', text: t('searchin')+' SteamBroker.com'},
-			{href:'http://steam-trader.com/games/?r=45962&text='+gamename, icon:'https://steam-trader.com/favicon.ico', text: t('searchin')+' Steam-Trader.com'},
+			{href:'https://steam-trader.com/games/?r=45962&text='+gamename, icon:'https://steam-trader.com/favicon.ico', text: t('searchin')+' Steam-Trader.com'},
 		];
 
 		if(itemType=='app'){
@@ -231,7 +231,7 @@ function init() {
 			})
 		)
 	} else {
-		$('.icon.discounts').parent().after('<a class="gutter_item" href="http://steamdb.info/sales/"><span class="icon discounts"></span><span> SteamDB.Info/Sales</span></a>');
+		$('.icon.discounts').parent().after('<a class="gutter_item" href="https://steamdb.info/sales/"><span class="icon discounts"></span><span> SteamDB.Info/Sales</span></a>');
 	}
 
 

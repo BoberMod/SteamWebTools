@@ -2,7 +2,7 @@ var $ = W.$J;
 
 $('#group_tab_content_overview').show().attr('id','swt_content1');
 
-$('head').append($('<link href="http://steamcommunity-a.akamaihd.net/public/css/skin_1/groupadmin.css" rel="stylesheet" type="text/css">'));
+$('head').append($('<link href="https://steamcommunity-a.akamaihd.net/public/css/skin_1/groupadmin.css" rel="stylesheet" type="text/css">'));
 
 $('.grouppage_logo').css('background-image','none');
 $('.grouppage_logo>img')[0].src='http://v1t.su/projects/steam/webtools/imgs/steam-big-icon.png';
@@ -164,7 +164,7 @@ $('#swt_btnDef').click(function(){
 	settings.reset();
 	settings.save();
 	if(!settings.storage.gm) {
-		W.location.href="http://store.steampowered.com/about/#swt-settings-del";
+		W.location.href="https://store.steampowered.com/about/#swt-settings-del";
 	} else
 		W.location.reload();
 });
@@ -180,7 +180,7 @@ $("form#editForm").submit(function(event) {
 
 	event.preventDefault();
 	if(!settings.storage.gm) {
-		W.location.href="http://store.steampowered.com/about/#swt-settings-save="+encodeURIComponent(JSON.stringify(settings.cur));
+		W.location.href="https://store.steampowered.com/about/#swt-settings-save="+encodeURIComponent(JSON.stringify(settings.cur));
 	} else
 		W.location.reload();
 });

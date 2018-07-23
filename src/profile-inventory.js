@@ -24,7 +24,7 @@ function inventoryPageInit(){
 	}
 
 	W.setSubID=function(subid){
-		var str = 'SubscriptionID = <a href="http://steamdb.info/sub/'+subid+'">'+subid+'</a>';
+		var str = 'SubscriptionID = <a href="https://steamdb.info/sub/'+subid+'">'+subid+'</a>';
 		ajaxTarget.element.outerHTML=str;
 		var ds = ajaxTarget.descriptions[ajaxTarget.classid];
 		ds[ds.length-1]={value:str, type:'html'};
@@ -86,7 +86,7 @@ function inventoryPageInit(){
 		}
 	}
 	W.sendChecked = function(){
-		var url = 'http://store.steampowered.com/checkout/sendgift/';
+		var url = 'https://store.steampowered.com/checkout/sendgift/';
 		// first to gid
 		for(var gid in W.checkedForSend){
 			break;
@@ -188,7 +188,7 @@ function inventoryPageInit(){
 				return res;
 			}
 			var market_hash_name = itmdescr.market_hash_name || itmdescr.market_name;
-			elActions.appendChild(W.CreateMarketActionButton('blue', 'http://steamcommunity.com/market/listings/'+item.appid+'/'+market_hash_name, t('minMarketPrice')+': <span id="swt_lowestItemPrice_'+item.classid+'">?</span>'));
+			elActions.appendChild(W.CreateMarketActionButton('blue', 'https://steamcommunity.com/market/listings/'+item.appid+'/'+market_hash_name, t('minMarketPrice')+': <span id="swt_lowestItemPrice_'+item.classid+'">?</span>'));
 			$(elActions).css('display', 'block');
 			$.ajax( {
 				url: '//steamcommunity.com/market/priceoverview/',
